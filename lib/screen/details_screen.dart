@@ -1,8 +1,6 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:travel_app/component/widgets/gap.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -48,6 +46,7 @@ class DetailsScreen extends StatelessWidget {
                         Navigator.pop(context);
                       },
                       icon: ClipRRect(
+                        borderRadius: BorderRadius.circular(30),
                         child: BackdropFilter(
                           filter: ImageFilter.blur(
                             sigmaX: 7,
@@ -75,6 +74,7 @@ class DetailsScreen extends StatelessWidget {
                     child: IconButton(
                       onPressed: () {},
                       icon: ClipRRect(
+                        borderRadius: BorderRadius.circular(30),
                         child: BackdropFilter(
                           filter: ImageFilter.blur(
                             sigmaX: 7,
